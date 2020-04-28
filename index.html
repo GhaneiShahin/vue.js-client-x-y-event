@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="asset/css/bootstrap.min.css"
+    />
+    <title>Vue.js</title>
+    <style>
+      .bordered{
+        border: 2px solid blue;
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        border-radius: 10px;
+      }
+    </style>
+
+  </head>
+  <body>
+    <br />
+    <div class="container">
+      <div class="row">
+        <div class="well">
+          <div id="app">
+            <div class="col-9">
+              <div class="bordered" v-on:mousemove="getCursor">
+                <p>client X : {{x}}</p>
+                <p>client Y : {{y}}</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="asset/js/vue.js"></script>
+    <script src="asset/js/costum.js"></script>
+  </body>
+</html>
